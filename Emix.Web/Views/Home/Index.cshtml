@@ -1,5 +1,5 @@
 ﻿<div>
-    <nav class="navbar navbar-default" role="navigation" ng-controller="appMenu">
+    <nav class="navbar navbar-default" role="navigation" ng-controller="appHeader">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -17,12 +17,12 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li ng-class="{ active: isMenuActive('/section')}"><a href="#/section">Section</a></li>
+                    <li ng-class="{ active: isMenuActive('/charts/morris')}"><a href="#/charts/morris">Section</a></li>
                     <li ng-class="{ active: isMenuActive('/fileupload')}"><a href="#/fileupload">Upload file</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown">Language <span class="caret"></span></a>
+                    <li class="dropdown" dropdown>
+                        <a href="" class="dropdown-toggle" dropdown-toggle>Language <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
                             <li ng-class="{ active: isLanguageActive('it-IT')}"><a href="" ng-click="changeLanguage('it-IT')"><span class="flag-icon flag-icon-it"></span> Italiano</a></li>
                             <li ng-class="{ active: isLanguageActive('en-US')}"><a href="" ng-click="changeLanguage('en-US')"><span class="flag-icon flag-icon-us"></span> English</a></li>
